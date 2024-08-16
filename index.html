@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random User Generator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 50px;
+        }
+
+        .user-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+        }
+
+        .user-card img {
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+
+        .user-card h2,
+        .user-card p {
+            margin: 5px 0;
+        }
+
+        .fetch-button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            background-color: #007BFF;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="user-card">
+        <img id="user-picture" src="" alt="User Picture" width="100" height="100">
+        <h2 id="user-name">Name</h2>
+        <p id="user-email">Email</p>
+    </div>
+    <button class="fetch-button" onclick="fetchRandomUser()">Get Random User</button>
+
+
+
+
+<script src="script.js"></script>
+    
+</body>
+
+</html>
